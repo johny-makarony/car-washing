@@ -3,7 +3,7 @@ export const Services = () => {
     <section className="section" id="services">
       <div className="container">
         <div className="services">
-          <h2 className="title services__title">Послуги</h2>
+          <h2 className="section__title">Послуги</h2>
           <div className="services__thumb">
             <ul className="services__list">
               <li className="services__item" key={1}>
