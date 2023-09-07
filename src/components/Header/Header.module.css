@@ -41,12 +41,6 @@
   text-decoration: none;
 
   transition: color var(--transition);
-
-  /* // &:hover,
-  // &:focus {
-  //   // color: var(--accent-color);
-  //   background-color: var(--accent-color);
-  // } */
 }
 
 .nav {
@@ -85,25 +79,12 @@
   }
 }
 
-.contacts__item {
-  &:first-child {
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 10px;
-    }
-  }
-}
-
 .header-contacts__link {
   text-align: right;
   @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.17px;
   }
-}
-
-.contacts__icon {
-  vertical-align: middle;
-  margin-right: 10px;
 }
 
 .header__btn {
