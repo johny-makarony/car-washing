@@ -28,7 +28,7 @@ export const Gallery = () => {
   return (
     <section className="section" id="gallery">
       <div className="container">
-        <h2 className="services__title">Наші роботи</h2>
+        <h2 className="section__title">Наші роботи</h2>
         <Slider {...settings}>
           {[
             { image: lanos, description: 'До' },
