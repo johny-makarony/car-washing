@@ -9,11 +9,7 @@
 .services__thumb {
   border-radius: 12px;
   padding: 30px 20px;
-  background-image: linear-gradient(
-    180deg,
-    #171a24 0%,
-    rgba(23, 26, 36, 0.2) 100%
-  );
+  background-image: var(--services-gradient-bgc);
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -29,11 +25,7 @@
   @media screen and (min-width: 1200px) {
     padding: 30px 20px;
     width: 570px;
-    background-image: linear-gradient(
-      180deg,
-      #171a24 0%,
-      rgba(23, 26, 36, 0.2) 100%
-    );
+    background-image: var(--services-gradient-bgc);
   }
   @media screen and (max-width: 1199px) {
     &:not(:last-child) {

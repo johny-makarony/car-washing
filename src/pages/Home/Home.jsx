@@ -1,11 +1,11 @@
-import { Header } from 'components/Header/Header';
-import { Hero } from 'components/Hero/Hero';
-import { Contacts } from 'components/Contacts/Contacts';
-import { Services } from 'components/Services/Services';
-import { Gallery } from 'components/Gallery/Gallery';
-import { Reserve } from 'components/Reserve/Reserve';
-import { About } from 'components/About/About';
-import { Footer } from 'components/Footer/Footer';
+import { Header } from 'components/HomePage/Header/Header';
+import { Hero } from 'components/HomePage/Hero/Hero';
+import { Contacts } from 'components/HomePage/Contacts/Contacts';
+import { Services } from 'components/HomePage/Services/Services';
+import { Gallery } from 'components/HomePage/Gallery/Gallery';
+import { Reserve } from 'components/HomePage/Reserve/Reserve';
+import { About } from 'components/HomePage/About/About';
+import { Footer } from 'components/HomePage/Footer/Footer';
 
 const Home = () => {
   return (

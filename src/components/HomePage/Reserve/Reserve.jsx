@@ -1,6 +1,6 @@
 import { useFormik } from 'formik';
 import TextField from '@mui/material/TextField';
-import { ReactComponent as MyLogo } from '../../images/icons/logo-without-star.svg';
+import { ReactComponent as MyLogo } from '../../../images/icons/logo-without-star.svg';
 
 export const Reserve = () => {
   const day = new Date().getDate().toString().padStart(2, '0');

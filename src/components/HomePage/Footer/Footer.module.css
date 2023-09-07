@@ -1,12 +1,12 @@
 .footer {
-  background-color: var(--form-bg-color);
+  background-color: var(--footer-bg-color);
 }
 
 .footer__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 70px;
 }
 
 .copyright__text {

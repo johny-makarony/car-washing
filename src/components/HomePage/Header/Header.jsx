@@ -1,4 +1,4 @@
-import { ReactComponent as MyLogo } from '../../images/icons/logo-without-star.svg';
+import { ReactComponent as MyLogo } from '../../../images/icons/logo-without-star.svg';
 
 export const Header = () => {
   return (

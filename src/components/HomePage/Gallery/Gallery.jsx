@@ -1,5 +1,5 @@
-import lanos from '../../images/lanos.webp';
-import panamera from '../../images/panamera.webp';
+import lanos from '../../../images/lanos.webp';
+import panamera from '../../../images/panamera.webp';
 
 import Slider from 'react-slick';
 
