@@ -1,0 +1,15 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
+@import './styles-components/variables.module.css';
+@import './styles-components/base.module.css';
+@import './styles-components/utils.module.css';
+@import './styles-components/section.module.css';
+@import './styles-components/container.module.css';
+@import './styles-components/buttons.module.css';
+@import './components/Header/Header.module.css';
+@import './components/Hero/Hero.module.css';
+@import './components/About/About.module.css';
+@import './components/Services/Services.module.css';
+@import './components/Gallery/Gallery.module.css';
+@import './components/Contacts/Contacts.module.css';
+@import './components/Reserve/Reserve.module.css';
+@import './components//Footer/Footer.module.css';

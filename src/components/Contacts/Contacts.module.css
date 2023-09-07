@@ -1,0 +1,56 @@
+.contacts {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  background-color: var(--secondary-bg-color);
+
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contacts--left-side,
+.contacts--right-side {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2);
+  }
+}
+
+.contacts--left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.contacts--right-side {
+  min-height: 450px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contacts__text,
+.address__link {
+  font-size: 16px;
+  color: var(--primary-text-color);
+}
+
+.address__link {
+  transition: color var(--transition);
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__title--schedule {
+  margin-top: 50px;
+  margin-bottom: 16px;
+  font-size: 20;
+}

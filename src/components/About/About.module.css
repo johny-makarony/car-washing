@@ -1,0 +1,16 @@
+.about__text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.features__title {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 20px;
+}
