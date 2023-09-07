@@ -6,37 +6,37 @@ export const Services = () => {
           <h2 className="section__title">Послуги</h2>
           <div className="services__thumb">
             <ul className="services__list">
-              <li className="services__item" key={1}>
+              <li className="services__item">
                 <p className="services__name">Lorem ipsum dolor sit amet.</p>
                 <span className="services__price">від 300 грн</span>
               </li>
-              <li className="services__item" key={2}>
+              <li className="services__item">
                 <p className="services__name">Lorem ipsum dolor sit amet.</p>
                 <span className="services__price">від 200 грн</span>
               </li>
-              <li className="services__item" key={3}>
+              <li className="services__item">
                 <p className="services__name">Lorem ipsum dolor sit amet.</p>
                 <span className="services__price">від 200 грн</span>
               </li>
-              <li className="services__item" key={4}>
+              <li className="services__item">
                 <p className="services__name">Lorem ipsum dolor sit amet.</p>
                 <span className="services__price">від 200 грн</span>
               </li>
             </ul>
             <ul className="services__list">
-              <li className="services__item" key={5}>
+              <li className="services__item">
                 <p className="services__name">Lorem ipsum dolor sit amet.</p>
                 <span className="services__price">від 50 грн</span>
               </li>
-              <li className="services__item" key={6}>
+              <li className="services__item">
                 <p className="services__name">Lorem ipsum dolor sit amet.</p>
                 <span className="services__price">від 200 грн</span>
               </li>
-              <li className="services__item" key={7}>
+              <li className="services__item">
                 <p className="services__name">Lorem ipsum dolor sit amet.</p>
                 <span className="services__price">від 300 грн</span>
               </li>
-              <li className="services__item" key={8}>
+              <li className="services__item">
                 <p className="services__name">Lorem ipsum dolor sit amet.</p>
                 <span className="services__price">від 200 грн</span>
               </li>
