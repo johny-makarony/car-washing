@@ -9,6 +9,12 @@
 .services__thumb {
   border-radius: 12px;
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
   @media screen and (max-width: 1198px) {
     padding: 30px 20px;
     background-image: linear-gradient(
@@ -16,12 +22,6 @@
       #171a24 0%,
       rgba(23, 26, 36, 0.2) 100%
     );
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
   }
 }
 
