@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/car-washing/static/css/main.6af952e2.css",
+    "main.js": "/car-washing/static/js/main.d9e58397.js",
+    "static/media/hero-img.jpg": "/car-washing/static/media/hero-img.29ed819203ab230bb6ff.jpg",
+    "static/media/panamera.webp": "/car-washing/static/media/panamera.87408407c6e444e82da9.webp",
+    "static/media/lanos.webp": "/car-washing/static/media/lanos.40bf69247713a2dcef04.webp",
+    "static/media/logo-without-star.svg": "/car-washing/static/media/logo-without-star.b3b23fdd7f2be149a2f5a085e5a238b9.svg",
+    "static/media/slick.svg": "/car-washing/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/car-washing/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/car-washing/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/car-washing/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/car-washing/index.html",
+    "main.6af952e2.css.map": "/car-washing/static/css/main.6af952e2.css.map",
+    "main.d9e58397.js.map": "/car-washing/static/js/main.d9e58397.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6af952e2.css",
+    "static/js/main.d9e58397.js"
+  ]
+}
