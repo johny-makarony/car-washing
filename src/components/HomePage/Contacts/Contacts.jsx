@@ -1,6 +1,6 @@
 export const Contacts = () => {
   return (
-    <section className="section" id="contacts">
+    <section className="section contacts__section" id="contacts">
       <div className="container">
         <div className="contacts">
           <div className="contacts--left-side">
