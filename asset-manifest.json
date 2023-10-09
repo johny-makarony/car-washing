@@ -1,7 +1,20 @@
 {
   "files": {
-    "main.css": "/car-washing/static/css/main.f2cb434f.css",
-    "main.js": "/car-washing/static/js/main.3cb521cb.js",
+    "main.css": "/car-washing/static/css/main.154e9e7c.css",
+    "main.js": "/car-washing/static/js/main.5298b408.js",
+    "static/js/783.2b41d7ac.chunk.js": "/car-washing/static/js/783.2b41d7ac.chunk.js",
+    "static/js/918.bbce9794.chunk.js": "/car-washing/static/js/918.bbce9794.chunk.js",
+    "static/js/664.9a979d89.chunk.js": "/car-washing/static/js/664.9a979d89.chunk.js",
+    "static/js/641.1d7ea2a3.chunk.js": "/car-washing/static/js/641.1d7ea2a3.chunk.js",
+    "static/js/296.c356490b.chunk.js": "/car-washing/static/js/296.c356490b.chunk.js",
+    "static/js/541.fa095608.chunk.js": "/car-washing/static/js/541.fa095608.chunk.js",
+    "static/js/965.74ec6a33.chunk.js": "/car-washing/static/js/965.74ec6a33.chunk.js",
+    "static/js/613.34d30ed5.chunk.js": "/car-washing/static/js/613.34d30ed5.chunk.js",
+    "static/js/22.5e93605c.chunk.js": "/car-washing/static/js/22.5e93605c.chunk.js",
+    "static/js/256.6c4d429e.chunk.js": "/car-washing/static/js/256.6c4d429e.chunk.js",
+    "static/js/717.bc0e02d6.chunk.js": "/car-washing/static/js/717.bc0e02d6.chunk.js",
+    "static/js/853.15f5ea05.chunk.js": "/car-washing/static/js/853.15f5ea05.chunk.js",
+    "static/js/126.9197732d.chunk.js": "/car-washing/static/js/126.9197732d.chunk.js",
     "static/media/hero-img.jpg": "/car-washing/static/media/hero-img.29ed819203ab230bb6ff.jpg",
     "static/media/panamera.webp": "/car-washing/static/media/panamera.87408407c6e444e82da9.webp",
     "static/media/lanos.webp": "/car-washing/static/media/lanos.40bf69247713a2dcef04.webp",
@@ -11,11 +24,24 @@
     "static/media/slick.ttf": "/car-washing/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/car-washing/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/car-washing/index.html",
-    "main.f2cb434f.css.map": "/car-washing/static/css/main.f2cb434f.css.map",
-    "main.3cb521cb.js.map": "/car-washing/static/js/main.3cb521cb.js.map"
+    "main.154e9e7c.css.map": "/car-washing/static/css/main.154e9e7c.css.map",
+    "main.5298b408.js.map": "/car-washing/static/js/main.5298b408.js.map",
+    "783.2b41d7ac.chunk.js.map": "/car-washing/static/js/783.2b41d7ac.chunk.js.map",
+    "918.bbce9794.chunk.js.map": "/car-washing/static/js/918.bbce9794.chunk.js.map",
+    "664.9a979d89.chunk.js.map": "/car-washing/static/js/664.9a979d89.chunk.js.map",
+    "641.1d7ea2a3.chunk.js.map": "/car-washing/static/js/641.1d7ea2a3.chunk.js.map",
+    "296.c356490b.chunk.js.map": "/car-washing/static/js/296.c356490b.chunk.js.map",
+    "541.fa095608.chunk.js.map": "/car-washing/static/js/541.fa095608.chunk.js.map",
+    "965.74ec6a33.chunk.js.map": "/car-washing/static/js/965.74ec6a33.chunk.js.map",
+    "613.34d30ed5.chunk.js.map": "/car-washing/static/js/613.34d30ed5.chunk.js.map",
+    "22.5e93605c.chunk.js.map": "/car-washing/static/js/22.5e93605c.chunk.js.map",
+    "256.6c4d429e.chunk.js.map": "/car-washing/static/js/256.6c4d429e.chunk.js.map",
+    "717.bc0e02d6.chunk.js.map": "/car-washing/static/js/717.bc0e02d6.chunk.js.map",
+    "853.15f5ea05.chunk.js.map": "/car-washing/static/js/853.15f5ea05.chunk.js.map",
+    "126.9197732d.chunk.js.map": "/car-washing/static/js/126.9197732d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2cb434f.css",
-    "static/js/main.3cb521cb.js"
+    "static/css/main.154e9e7c.css",
+    "static/js/main.5298b408.js"
   ]
 }
