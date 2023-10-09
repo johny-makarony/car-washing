@@ -1,7 +1,9 @@
+/* Global */
 @import '../node_modules/modern-normalize/modern-normalize.css';
 @import './styles-components/variables.module.css';
 @import './styles-components/base.module.css';
 @import './styles-components/utils.module.css';
+/* Clients page */
 @import './styles-components/section.module.css';
 @import './styles-components/container.module.css';
 @import './styles-components/buttons.module.css';
@@ -13,3 +15,7 @@
 @import './components/HomePage/Contacts/Contacts.module.css';
 @import './components/HomePage/Reserve/Reserve.module.css';
 @import './components/HomePage/Footer/Footer.module.css';
+/* Admin page */
+@import './components/AdminPage/Sidebar/Sidebar.module.css';
+@import './components/AdminPage/OrdersItem/OrdersItem.module.css';
+@import './components/AdminPage/OrderCard/OrderCard.module.css';

@@ -1,0 +1,39 @@
+.sidebar {
+  padding: 20px;
+  width: 300px;
+  height: 100vh;
+  background-color: var(--secondary-bg-color);
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  width: 100%;
+}
+
+.user__icon {
+  width: 40px;
+  height: 40px;
+  color: var(--accent-color);
+  background-color: var(--admin-items-bg-color);
+  border-radius: 8px;
+}
+
+.user__name {
+  font-size: 18px;
+}
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}

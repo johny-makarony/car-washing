@@ -8,7 +8,7 @@
   --white-color: #ffffff;
   --black-color: #1e2124;
 
-  /* background */
+  /* backgrounds */
   --primary-bg-color: #1e2124;
   --secondary-bg-color: #36393e;
   --form-bg-color: #d6d7d8;
@@ -19,6 +19,7 @@
   );
   --shadow-bg-color: rgba(0, 0, 0, 0.7);
   --footer-bg-color: #d6d7d8;
+  --admin-items-bg-color: #424549;
 
   /* transition */
   --transition: 300ms linear;
@@ -34,4 +35,11 @@
     #171a24 0%,
     rgba(23, 26, 36, 0.2) 100%
   );
+
+  /* buttons colors */
+  --filter-all-color: white;
+  --filter-new-color: silver;
+  --filter-inProcess-color: yellow;
+  --filter-completed-color: green;
+  --filter-cancelled-color: red;
 }
