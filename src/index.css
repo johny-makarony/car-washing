@@ -17,5 +17,3 @@
 @import './components/HomePage/Footer/Footer.module.css';
 /* Admin page */
 @import './components/AdminPage/Sidebar/Sidebar.module.css';
-@import './components/AdminPage/OrdersItem/OrdersItem.module.css';
-@import './components/AdminPage/OrderCard/OrderCard.module.css';

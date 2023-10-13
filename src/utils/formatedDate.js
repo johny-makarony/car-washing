@@ -12,5 +12,5 @@ export function formatedDate(unformatedDate) {
     minute: '2-digit',
   });
 
-  return `${date} | ${time}`;
+  return `${date} ${time}`;
 }

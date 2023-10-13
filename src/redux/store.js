@@ -1,11 +1,12 @@
 import storage from 'redux-persist/lib/storage';
 import { configureStore } from '@reduxjs/toolkit';
 
-import { authReducer } from './Auth/AuthSlice';
+import { authReducer } from './auth/authSlice';
 import { employeesReducer } from './employees/employeesSlice';
 import { servicesReducer } from './services/servicesSlice';
 import { ordersReducer } from './orders/ordersSlice';
 import { reportsReducer } from './reporting/reportingSlice';
+import { galleryReducer } from './gallery/gallerySlice';
 
 import {
   persistStore,
@@ -33,6 +34,7 @@ export const store = configureStore({
     services: servicesReducer,
     orders: ordersReducer,
     reports: reportsReducer,
+    gallery: galleryReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

@@ -3,27 +3,18 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import { Sidebar } from 'components/AdminPage/Sidebar/Sidebar';
+import { AdminContainer } from 'components/Global/Global.styled';
 import { Loading } from 'components/Loading/Loading';
 
-import {
-  selectIsLoggedIn,
-  // selectIsAuthLoading,
-} from 'redux/Auth/AuthSelectors';
-import { refresh } from 'redux/Auth/AuthOperations';
-// import { selectIsLoadingEmployees } from 'redux/employees/employeesSelectors';
-// import { selectIsLoadingServices } from 'redux/services/servicesSelectors';
-// import { selectIsLoadingOrders } from 'redux/orders/ordersSelectors';
+import { selectIsLoggedIn } from 'redux/auth/authSelectors';
+import { refresh } from 'redux/auth/authOperations';
 
 const Admin = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const isLoggedIn = useSelector(selectIsLoggedIn);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const isLoggedIn = useSelector(selectIsLoggedIn);
-  // const isAuthLoading = useSelector(selectIsAuthLoading);
-  // const isOrdersLoading = useSelector(selectIsLoadingOrders);
-  // const isEmployeesLoading = useSelector(selectIsLoadingEmployees);
-  // const isServicesLoading = useSelector(selectIsLoadingServices);
 
   useEffect(() => {
     const LocalStoreToken = localStorage.getItem('persist:auth');
@@ -54,14 +45,9 @@ const Admin = () => {
   return (
     <div style={{ display: 'flex' }}>
       <Sidebar />
-      <div
-        style={{
-          padding: '40px',
-          width: '100%',
-        }}
-      >
+      <AdminContainer>
         <Outlet />
-      </div>
+      </AdminContainer>
     </div>
   );
 };

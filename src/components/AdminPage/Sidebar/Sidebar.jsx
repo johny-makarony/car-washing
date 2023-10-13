@@ -21,7 +21,7 @@ export const Sidebar = () => {
         <PageLink to="services" className="sidebar__item">
           Послуги
         </PageLink>
-        <PageLink to="reporting" className="sidebar__item">
+        <PageLink to="reports" className="sidebar__item">
           Звітність
         </PageLink>
       </nav>

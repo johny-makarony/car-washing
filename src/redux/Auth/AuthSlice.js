@@ -1,6 +1,6 @@
 import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 
-import { login, logout, refresh, getAdministrators } from './AuthOperations';
+import { login, logout, refresh, getAdministrators } from './authOperations';
 
 const AuthInitialState = {
   user: {

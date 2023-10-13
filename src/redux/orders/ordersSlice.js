@@ -23,17 +23,17 @@ export const ordersSlice = createSlice({
         return {
           ...state,
           items: [action.payload, ...state.items],
-          isLoading: false,
           error: null,
+          isLoading: false,
         };
       })
       .addCase(getAllOrders.fulfilled, (state, action) => {
         return {
           ...state,
           items: [...action.payload.orders],
-          isLoading: false,
           error: null,
           totalPages: action.payload.totalPages,
+          isLoading: false,
         };
       })
       .addCase(getOrderByNumber.fulfilled, (state, action) => {

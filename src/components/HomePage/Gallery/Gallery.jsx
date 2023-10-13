@@ -1,9 +1,23 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import Slider from 'react-slick';
+
+import { getGallery } from 'redux/gallery/galleryOperations';
+import { selectGallery } from 'redux/gallery/gallerySelectors';
+
 import lanos from '../../../images/lanos.webp';
 import panamera from '../../../images/panamera.webp';
 
-import Slider from 'react-slick';
-
 export const Gallery = () => {
+  const gallery = useSelector(selectGallery);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getGallery());
+  }, [dispatch]);
+
+  console.log(gallery);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -43,6 +57,28 @@ export const Gallery = () => {
               <h3 className="description">{item.description}</h3>
             </div>
           ))}
+          {/* {gallery.map((item, index) => (
+            <div key={item._id}>
+              <div className="image-container">
+                <img
+                  src={item.beforePhoto.url}
+                  alt="Example"
+                  width="100%"
+                  height="100%"
+                />
+                <h3 className="description">До</h3>
+              </div>
+              <div className="image-container">
+                <img
+                  src={item.afterPhoto.url}
+                  alt="Example"
+                  width="100%"
+                  height="100%"
+                />
+                <h3 className="description">Після</h3>
+              </div>
+            </div>
+          ))} */}
         </Slider>
       </div>
     </section>

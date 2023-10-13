@@ -1,8 +1,19 @@
 import { useDispatch } from 'react-redux';
 import { useFormik } from 'formik';
 
-import { Backdrop, Modal, Form, Title, CloseButton } from '../Modal.styles';
-import { TextField, Select, MenuItem, InputLabel } from '@mui/material';
+import {
+  Backdrop,
+  Modal,
+  Title,
+  CloseButton,
+  Form,
+  Label,
+  FormSelect,
+  Input,
+  CloseIcon,
+} from '../Modal.styles';
+import { MainButton } from 'components/Global/Global.styled';
+import { MenuItem, InputLabel, Checkbox } from '@mui/material';
 
 import { addService } from 'redux/services/servicesOperations';
 
@@ -23,11 +34,12 @@ export const ModalAddService = props => {
     initialValues: {
       category: '',
       name: '',
-      pricePerMeter: '',
       price: '',
+      pricePerMeter: false,
       employeePercent: '',
     },
     onSubmit: values => {
+      console.log(values);
       dispatch(addService(values));
       handleExitModal();
     },
@@ -36,27 +48,26 @@ export const ModalAddService = props => {
   return (
     <Backdrop onClick={handleBackdropClick}>
       <Modal>
+        <Title>Додати послугу</Title>
         <CloseButton type="button" onClick={handleExitModal}>
-          Закрити
+          <CloseIcon />
         </CloseButton>
         <Form onSubmit={formik.handleSubmit}>
-          <Title>Додати послугу</Title>
           <InputLabel id="category-label">Оберіть об'єкт послуги</InputLabel>
-          <Select
+          <FormSelect
             required
             labelId="category-label"
             id="category"
             name="category"
             value={formik.values.category}
             onChange={formik.handleChange}
-            variant="standard"
-            style={{ width: '100%' }}
+            variant="outlined"
           >
             <MenuItem value="Авто">Авто</MenuItem>
             <MenuItem value="Килим">Килим</MenuItem>
-          </Select>
+          </FormSelect>
 
-          <TextField
+          <Input
             required
             type="text"
             id="name"
@@ -64,24 +75,22 @@ export const ModalAddService = props => {
             label="Назва послуги"
             value={formik.values.name}
             onChange={formik.handleChange}
-            variant="standard"
-            className="field"
+            variant="outlined"
           />
-          <InputLabel id="pricePerMeter-label">Вартість за м²?</InputLabel>
-          <Select
+          {/* <InputLabel id="pricePerMeter-label">Вартість за м²?</InputLabel> */}
+          {/* <FormSelect
             required
             labelId="pricePerMeter-label"
             id="pricePerMeter"
             name="pricePerMeter"
             value={formik.values.pricePerMeter}
             onChange={formik.handleChange}
-            variant="standard"
-            style={{ width: '100%' }}
+            variant="outlined"
           >
             <MenuItem value="Так">Так</MenuItem>
             <MenuItem value="Ні">Ні</MenuItem>
-          </Select>
-          <TextField
+          </FormSelect> */}
+          <Input
             required
             type="text"
             id="price"
@@ -89,10 +98,22 @@ export const ModalAddService = props => {
             label="Ціна послуги"
             value={formik.values.price}
             onChange={formik.handleChange}
-            variant="standard"
-            className="field"
+            variant="outlined"
+            className="outlined"
           />
-          <TextField
+          <Label>
+            <Checkbox
+              checked={formik.values.pricePerMeter}
+              onChange={() =>
+                formik.setFieldValue(
+                  'pricePerMeter',
+                  !formik.values.pricePerMeter
+                )
+              }
+            />
+            Ціна за м²
+          </Label>
+          <Input
             required
             type="text"
             id="employeePercent"
@@ -100,13 +121,13 @@ export const ModalAddService = props => {
             label="Відсоток працівнику"
             value={formik.values.employeePercent}
             onChange={formik.handleChange}
-            variant="standard"
-            className="field"
+            variant="outlined"
+            className="outlined"
           />
 
-          <button type="submit" className="btn">
+          <MainButton type="submit" color="var(--black-color)" margin={true}>
             Додати
-          </button>
+          </MainButton>
         </Form>
       </Modal>
     </Backdrop>

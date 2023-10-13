@@ -1,8 +1,18 @@
 import { useDispatch } from 'react-redux';
 import { useFormik } from 'formik';
 
-import { Backdrop, Modal, Form, Title, CloseButton } from '../Modal.styles';
-import { TextField, Select, MenuItem, InputLabel } from '@mui/material';
+import {
+  Backdrop,
+  Modal,
+  Title,
+  CloseButton,
+  Form,
+  Label,
+  Input,
+  CloseIcon,
+} from '../Modal.styles';
+import { MainButton } from 'components/Global/Global.styled';
+import { Checkbox } from '@mui/material';
 
 import { addEmployee } from 'redux/employees/employeesOperations';
 
@@ -23,7 +33,7 @@ export const ModalAddEmployee = props => {
     initialValues: {
       name: '',
       phone: '',
-      criminal: '',
+      criminal: false,
       worksFromDate: '',
     },
     onSubmit: values => {
@@ -35,12 +45,12 @@ export const ModalAddEmployee = props => {
   return (
     <Backdrop onClick={handleBackdropClick}>
       <Modal>
+        <Title>Додати працівника</Title>
         <CloseButton type="button" onClick={handleExitModal}>
-          Закрити
+          <CloseIcon />
         </CloseButton>
         <Form onSubmit={formik.handleSubmit}>
-          <Title>Додати працівника</Title>
-          <TextField
+          <Input
             required
             type="text"
             id="name"
@@ -48,10 +58,9 @@ export const ModalAddEmployee = props => {
             label="Ім'я працівника"
             value={formik.values.name}
             onChange={formik.handleChange}
-            variant="standard"
-            className="field"
+            variant="outlined"
           />
-          <TextField
+          <Input
             required
             type="tel"
             id="phone"
@@ -59,38 +68,34 @@ export const ModalAddEmployee = props => {
             label="Номер телефона"
             value={formik.values.phone}
             onChange={formik.handleChange}
-            variant="standard"
-            className="field"
+            variant="outlined"
           />
+          <Label>
+            Працює з:
+            <Input
+              required
+              type="date"
+              id="worksFromDate"
+              name="worksFromDate"
+              value={formik.values.worksFromDate}
+              onChange={formik.handleChange}
+              variant="filled"
+              style={{ width: '100%' }}
+            />
+          </Label>
+          <Label>
+            <Checkbox
+              checked={formik.values.criminal}
+              onChange={() =>
+                formik.setFieldValue('criminal', !formik.values.criminal)
+              }
+            />
+            Судимість
+          </Label>
 
-          <InputLabel id="criminal-label">Чи є судимість:</InputLabel>
-          <Select
-            required
-            labelId="criminal-label"
-            id="criminal"
-            name="criminal"
-            value={formik.values.criminal}
-            onChange={formik.handleChange}
-            variant="standard"
-            style={{ width: '100%' }}
-          >
-            <MenuItem value="Так">Так</MenuItem>
-            <MenuItem value="Ні">Ні</MenuItem>
-          </Select>
-          <TextField
-            required
-            type="date"
-            id="worksFromDate"
-            name="worksFromDate"
-            value={formik.values.worksFromDate}
-            onChange={formik.handleChange}
-            variant="filled"
-            className="field"
-            style={{ width: '100%' }}
-          />
-          <button type="submit" className="btn">
+          <MainButton type="submit" color="var(--black-color)" margin={true}>
             Додати
-          </button>
+          </MainButton>
         </Form>
       </Modal>
     </Backdrop>
