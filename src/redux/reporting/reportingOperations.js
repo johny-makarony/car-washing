@@ -2,8 +2,8 @@ import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 // import toast from 'react-hot-toast';
 
-// axios.defaults.baseURL = 'https://car-washing-backend.onrender.com';
-axios.defaults.baseURL = 'http://localhost:3001/';
+axios.defaults.baseURL = 'https://car-washing-backend.onrender.com';
+// axios.defaults.baseURL = 'http://localhost:3001/';
 // const errorMsg = "Something's wrong. Please update page and try again";
 
 export const getReportingByDates = createAsyncThunk(

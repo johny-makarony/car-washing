@@ -2,14 +2,16 @@
   /* text */
   --primary-text-color: #ffffff;
   --description-color: #ffffff;
-  --accent-color: #ff7400;
-  --header-text-color: #ff7400;
+  --accent-color: #ccac00;
+  --header-text-color: #ccac00;
   --copyright-color: #9a9c9e;
   --white-color: #ffffff;
   --black-color: #1e2124;
 
   /* backgrounds */
+  /* --primary-bg-color: #1e2124; */
   --primary-bg-color: #1e2124;
+
   --secondary-bg-color: #36393e;
   --form-bg-color: #d6d7d8;
   --header-bg-color: linear-gradient(
